@@ -82,6 +82,7 @@
   find:
     paths: "{{ bind_zone_dir }}"
     patterns: '*.jnl' 
+    excludes: 'managed-keys.bind.jnl'
     file_type: file
     recurse: no
   register: zones_tosync_temp  
